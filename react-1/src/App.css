@@ -27,20 +27,60 @@ body::before {
   width: 100vw;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  position: fixed;
+  top: 15px;
 }
 
 .navbar .navbar-wrapper {
   display: flex;
   gap: 60px;
   background-color: white;
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-radius: 8px;
   border: 2px solid rgb(170, 170, 170);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1.5px 6px rgba(0, 0, 0, 0.04);
 }
 
 .navbar .navbar-wrapper span{
-  color: rgb(42, 42, 42);
+  color: rgb(60, 60, 60);
   font-size: 1.2rem;
+}
+
+.hero{
+  display: flex;
+  margin-top: 100px;
+}
+
+.hero .left{
+  width: 50%;
+  padding: 20px;
+}
+
+.hero .right{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .right .absolute{
+  position: absolute;
+}
+
+.hero .right .absolute.fullstackbanner{
+  width: 250px;
+  bottom: 10%;
+  left: 15%;
+  border-radius: 8px;
+}
+
+.hero .right .absolute.aibanner{
+  width: 250px;
+  border-radius: 8px;
+  right: 10%;
+  top: 30%;
+}
+
+.hero .right .me{
+  width: 60%;
 }
