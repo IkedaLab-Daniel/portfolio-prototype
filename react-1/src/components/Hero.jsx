@@ -10,11 +10,12 @@ const Hero = () =>{
         <>
             <div className="hero">
                 <div className="left">
-                    <h1 className="name">NAME NAME NAME NAME NAME</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut id reprehenderit tenetur exercitationem perferendis temporibus ipsa quisquam similique corrupti maiores, animi atque nulla. Voluptas, eius quia aut itaque ipsum amet?</p>
+                    <h1 className="name">Mark Daniel V. Callejas</h1>
+                    <h4>Full Stack Software Engineer</h4>
+                    <p>I'm currently taking Bachelor of Science in Information Technology at Mabalacat City College. I am primarily focused on Web Developement.</p>
                     <div className="button-container">
-                        <button>Contact</button>
-                        <button>Projects</button>
+                        <button className='contact'>Contact</button>
+                        <button className='projects'>Projects</button>
                     </div>
                 </div>
 
