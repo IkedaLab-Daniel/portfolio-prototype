@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  font-family: sans-serif;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-photo img.me {
+  width: 220px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: relative;
+}
+
+.tech-icon {
+  position: absolute;
+  width: 50px;
+  opacity: 0.9;
+  animation: float 6s ease-in-out infinite, fade-in 1.2s ease-in 1;
+}
+
+.tech-icon.html { top: 10%; left: 20%; }
+.tech-icon.frontend { top: 10%; left: 60%; }
+.tech-icon.css { top: 30%; left: 10%; }
+.tech-icon.js { top: 60%; left: 15%; }
+.tech-icon.react { top: 20%; right: 20%; }
+.tech-icon.node { top: 40%; right: 10%; }
+.tech-icon.mongo { bottom: 15%; left: 30%; }
+.tech-icon.php { bottom: 20%; right: 25%; }
+.tech-icon.mysql { top: 75%; right: 35%; }
+.tech-icon.django { bottom: 10%; left: 10%; }
+.tech-icon.python { top: 10%; right: 10%; }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(-10deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
