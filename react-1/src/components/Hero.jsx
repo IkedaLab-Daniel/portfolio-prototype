@@ -1,6 +1,9 @@
 import mepng from '../assets/me.png'
 import fullstackbanner from '../assets/1.svg'
 import aibanner from '../assets/2.svg'
+import jscircle from '../assets/js3.svg'
+import pythoncircle from '../assets/py3.svg'
+
 const Hero = () =>{
 
     return(
@@ -19,6 +22,8 @@ const Hero = () =>{
                     <img src={mepng} alt="" className='me' />
                     <img src={fullstackbanner} className='absolute fullstackbanner' />
                     <img src={aibanner} className='absolute aibanner' />
+                    <img src={jscircle} className='absolute js' />
+                    <img src={pythoncircle} className='absolute py' />
                 </div>
             </div>
         </>

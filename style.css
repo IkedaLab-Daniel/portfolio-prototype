@@ -22,7 +22,7 @@ body {
   z-index: 1;
   position: relative;
   transform: rotate(-3deg) scale(0.96);
-  animation: pinned-pop 1s cubic-bezier(.68,-0.55,.27,1.55) 1;
+  animation: pinned-pop 1s cubic-bezier(.68,-0.55,.27,1.55);
 }
 
 .tech-icon {
