@@ -199,7 +199,8 @@ body::before {
 
 @media (max-width: 768px) {
   .navbar {
-    top: 5px;
+    top: unset;
+    bottom: 10px;
   }
 
   .navbar .navbar-wrapper {
@@ -209,7 +210,7 @@ body::before {
   }
 
   .hero {
-    margin-top: 70px;
+    margin-top: 0px;
     flex-direction: column-reverse;
   }
 
@@ -234,24 +235,36 @@ body::before {
   }
 
   .hero .right .me {
-    width: 80%;
+    width: 90%;
   }
 
-  .hero .right .absolute.fullstackbanner,
-  .hero .right .absolute.aibanner {
-    width: 160px;
+  .hero .right .absolute.fullstackbanner{
+    width: 190px;
     left: 5%;
     right: 5%;
     top: unset;
     bottom: 5%;
   }
 
-  .hero .right .absolute.js,
+  .hero .right .absolute.aibanner {
+    width: 120px;
+    left: unset;
+    right: 5%;
+    top: 30%;
+    bottom: unset;
+  }
+
+  .hero .right .absolute.js{
+    width: 60px;
+    right: 10%;
+    top: 10%;
+  }
+
   .hero .right .absolute.py {
     width: 60px;
-    left: unset;
+    left: 10%;
     right: unset;
     top: unset;
-    bottom: 10%;
+    bottom: 20%;
   }
 }

@@ -10,9 +10,9 @@ const Hero = () =>{
         <>
             <div className="hero">
                 <div className="left">
-                    <h1 className="name">Mark Daniel V. Callejas</h1>
-                    <h4>Full Stack Software Engineer</h4>
-                    <p>I'm currently taking Bachelor of Science in Information Technology at Mabalacat City College. I am primarily focused on Web Developement.</p>
+                    <h1 className="name">Night is so peaceful guys</h1>
+                    <h4>see you'll tommorow</h4>
+                    <p>join yeolpunta group??????????</p>
                     <div className="button-container">
                         <button className='contact'>Contact</button>
                         <button className='projects'>Projects</button>
