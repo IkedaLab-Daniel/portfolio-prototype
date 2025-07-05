@@ -1,10 +1,33 @@
+import { useState, useEffect } from 'react'
 import mepng from '../assets/me.png'
 import fullstackbanner from '../assets/1.svg'
 import aibanner from '../assets/2.svg'
 import jscircle from '../assets/js3.svg'
 import pythoncircle from '../assets/py3.svg'
 
+const techSets = [
+  [
+    { src: fullstackbanner, className: 'absolute fullstackbanner' },
+    { src: aibanner, className: 'absolute aibanner' },
+    { src: jscircle, className: 'absolute js' },
+    { src: pythoncircle, className: 'absolute py' }
+  ],
+  [
+    { src: jscircle, className: 'absolute js' },
+    { src: pythoncircle, className: 'absolute py' }
+  ]
+]
+
 const Hero = () =>{
+
+    const [setIndex, setSetIndex] = useState(0)
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+        setSetIndex((prev) => (prev + 1) % techSets.length)
+        }, 5000)
+        return () => clearTimeout(timer)
+    }, [setIndex])
 
     return(
         <>
@@ -21,10 +44,9 @@ const Hero = () =>{
 
                 <div className="right">
                     <img src={mepng} alt="" className='me' />
-                    <img src={fullstackbanner} className='absolute fullstackbanner' />
-                    <img src={aibanner} className='absolute aibanner' />
-                    <img src={jscircle} className='absolute js' />
-                    <img src={pythoncircle} className='absolute py' />
+                    {techSets[setIndex].map((icon, i) => (
+                    <img key={i} src={icon.src} className={icon.className} />
+                    ))}
                 </div>
             </div>
         </>
